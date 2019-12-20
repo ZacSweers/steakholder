@@ -1,12 +1,15 @@
 {
 	"manifest_version": 2,
-	"name": "Cloud To Butt",
+	"name": "Steakholder",
+    "short_name": "Steakholder",
 	"version": "1.0",
-	"description": "Replaces the text 'the cloud' with 'my butt'.",
-	"content_scripts": 
+	"description": "Replaces the text 'stakeholder' with 'steakholder'.",
+	"author": "Zac Sweers",
+	"content_scripts":
 	[
 		{
 			"matches": ["*://*/*"],
+			"all_frames": true,
 			"js": ["content_script.js"],
 			"run_at": "document_end"
 		}
